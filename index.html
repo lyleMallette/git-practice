@@ -10,5 +10,20 @@
 <p>My goal is to build useful, creative websites.</p>
 <p>I'm building my skills one step at a time.</p>
 <h2>What I'm Learning</h2>
+
+<button id="learnButton">Show my goal</button>
+<p id="goalMessage" hidden> I'm building skills for my next front end job</p>
+
+<script>
+
+	const button = document.getElementById("learnButton");
+	const message = document.getElementById("goalMessage");
+
+	button.addEventListener("click", function() {
+		message.hidden = !message.hidden;
+	});
+
+</script>
+
 </body>
 </html>
